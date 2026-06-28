@@ -1,4 +1,5 @@
-# shivamgodhwani
+# Hi, I'm Shivam 👋
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/shivamgodhwani/shivamgodhwani/blob/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/shivamgodhwani/shivamgodhwani/blob/output/github-snake.svg" />
