@@ -1,0 +1,424 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240">
+  <defs>
+    <style>
+      @keyframes grow { 0%{stroke-dashoffset:1000} 100%{stroke-dashoffset:0} }
+      @keyframes grow2 { 0%{stroke-dashoffset:800} 100%{stroke-dashoffset:0} }
+      @keyframes fadeIn { 0%,60%{opacity:0} 100%{opacity:1} }
+      @keyframes fadeIn2 { 0%,70%{opacity:0} 100%{opacity:1} }
+      @keyframes fadeIn3 { 0%,80%{opacity:0} 100%{opacity:1} }
+      @keyframes butterfly { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(-5px)} }
+      @keyframes wingflap { 0%,100%{transform:scaleX(1)} 50%{transform:scaleX(0.25)} }
+      @keyframes birdfly { 0%,100%{transform:translate(0,0)} 50%{transform:translate(0,-4px)} }
+      @keyframes ladybug { 0%,100%{transform:translate(0,0)} 50%{transform:translate(2px,-2px)} }
+      @keyframes tailwag { 0%,100%{transform:rotate(-10deg)} 50%{transform:rotate(15deg)} }
+      @keyframes eyeblink { 0%,90%,100%{transform:scaleY(1)} 95%{transform:scaleY(0.1)} }
+      @keyframes snailmove { 0%,100%{transform:translate(0,0)} 50%{transform:translate(3px,0)} }
+      @keyframes petalway { 0%,100%{transform:rotate(0deg)} 50%{transform:rotate(6deg)} }
+      @keyframes glow { 0%,100%{opacity:0.6} 50%{opacity:1} }
+      @keyframes lemurblink { 0%,88%,100%{transform:scaleY(1)} 93%{transform:scaleY(0.05)} }
+
+      .v1{stroke:#1b4332;stroke-width:3;fill:none;stroke-linecap:round;stroke-dasharray:1000;animation:grow 4s ease forwards;}
+      .v2{stroke:#2d6a4f;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-dasharray:800;animation:grow2 4.5s ease forwards;}
+      .v3{stroke:#40916c;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-dasharray:800;animation:grow2 5s ease forwards;}
+      .v4{stroke:#52b788;stroke-width:1.2;fill:none;stroke-linecap:round;stroke-dasharray:600;animation:grow2 5.5s ease forwards;}
+      .l1{animation:fadeIn 4.5s ease forwards;}
+      .l2{animation:fadeIn2 5s ease forwards;}
+      .l3{animation:fadeIn3 5.8s ease forwards;}
+      .butterfly-g{animation:butterfly 3s ease-in-out infinite;}
+      .bwing{animation:wingflap 0.35s ease-in-out infinite;transform-origin:center;}
+      .bird-g{animation:birdfly 3.5s ease-in-out infinite;}
+      .lady-g{animation:ladybug 2.5s ease-in-out infinite;}
+      .squirrel-tail{animation:tailwag 1.2s ease-in-out infinite;transform-origin:0px 0px;}
+      .snail-g{animation:snailmove 3s ease-in-out infinite;}
+      .lemur-eye{animation:lemurblink 4s ease-in-out infinite;transform-origin:center;}
+      .petal{animation:petalway 3s ease-in-out infinite;transform-origin:center;}
+      .glow{animation:glow 2s ease-in-out infinite;}
+    </style>
+  </defs>
+
+  <rect width="900" height="240" fill="#0a0a0a" rx="18"/>
+
+  <!-- ===== LEFT VINES ===== -->
+  <path class="v1" d="M 32 0 C 38 35 22 60 34 95 C 44 125 22 150 30 180 C 36 205 26 218 32 240"/>
+  <path class="v2" d="M 33 35 C 14 40 4 54 2 68 C 0 78 4 86 0 94"/>
+  <path class="v2" d="M 32 90 C 12 95 2 112 4 126 C 6 138 0 145 0 155"/>
+  <path class="v3" d="M 31 148 C 13 156 7 170 9 183"/>
+  <path class="v3" d="M 34 68 C 54 74 64 86 62 100"/>
+  <path class="v4" d="M 33 120 C 52 127 60 140 57 153"/>
+  <path class="v2" d="M 64 0 C 68 30 54 52 60 76 C 65 96 52 116 58 140 C 62 162 52 178 57 200 C 60 215 53 226 57 240"/>
+  <path class="v3" d="M 58 48 C 76 54 84 67 82 80"/>
+  <path class="v4" d="M 57 108 C 74 114 80 128 78 142"/>
+  <path class="v4" d="M 86 0 C 89 24 79 42 83 62 C 87 80 77 96 81 118"/>
+
+  <!-- THORNS LEFT -->
+  <polygon fill="#0d2818" points="33,32 27,27 40,25"/>
+  <polygon fill="#0d2818" points="34,74 27,69 41,67"/>
+  <polygon fill="#0d2818" points="32,122 25,118 39,115"/>
+  <polygon fill="#0d2818" points="31,168 24,163 38,161"/>
+  <polygon fill="#0d2818" points="2,62 -3,55 7,53"/>
+  <polygon fill="#0d2818" points="4,118 -1,111 9,109"/>
+  <polygon fill="#0d2818" points="61,43 56,37 67,35"/>
+  <polygon fill="#0d2818" points="59,103 53,97 65,95"/>
+
+  <!-- LEFT LEAVES -->
+  <ellipse class="l1" cx="0" cy="66" rx="12" ry="5" fill="#1b4332" transform="rotate(-35 0 66)"/>
+  <ellipse class="l1" cx="3" cy="75" rx="10" ry="4.5" fill="#2d6a4f" transform="rotate(25 3 75)"/>
+  <ellipse class="l1" cx="-1" cy="84" rx="8" ry="3.5" fill="#52b788" transform="rotate(-15 -1 84)"/>
+  <ellipse class="l2" cx="2" cy="126" rx="13" ry="5.5" fill="#1b4332" transform="rotate(-28 2 126)"/>
+  <ellipse class="l2" cx="6" cy="135" rx="10" ry="4" fill="#2d6a4f" transform="rotate(20 6 135)"/>
+  <ellipse class="l2" cx="-1" cy="145" rx="8" ry="3.5" fill="#74c69d" transform="rotate(-10 -1 145)"/>
+  <ellipse class="l3" cx="9" cy="183" rx="10" ry="4.5" fill="#2d6a4f" transform="rotate(-22 9 183)"/>
+  <ellipse class="l3" cx="12" cy="192" rx="8" ry="3.5" fill="#52b788" transform="rotate(18 12 192)"/>
+  <ellipse class="l2" cx="62" cy="98" rx="11" ry="5" fill="#1b4332" transform="rotate(15 62 98)"/>
+  <ellipse class="l2" cx="57" cy="106" rx="8" ry="3.5" fill="#95d5b2" transform="rotate(-20 57 106)"/>
+  <ellipse class="l1" cx="82" cy="78" rx="10" ry="4" fill="#2d6a4f" transform="rotate(12 82 78)"/>
+  <ellipse class="l2" cx="78" cy="140" rx="9" ry="4" fill="#52b788" transform="rotate(-18 78 140)"/>
+  <path class="l1" d="M 15 52 Q 0 44 -2 32 Q 8 40 20 46 Z" fill="#1b4332"/>
+  <path class="l2" d="M 18 112 Q 2 104 0 90 Q 10 100 22 106 Z" fill="#2d6a4f"/>
+  <path class="l3" d="M 16 162 Q 2 154 0 140 Q 10 150 20 156 Z" fill="#40916c"/>
+
+  <!-- ===== RIGHT VINES ===== -->
+  <path class="v1" d="M 868 0 C 862 35 878 60 866 95 C 856 125 878 150 870 180 C 864 205 874 218 868 240"/>
+  <path class="v2" d="M 867 35 C 886 40 896 54 898 68 C 900 78 896 86 900 94"/>
+  <path class="v2" d="M 868 90 C 888 95 898 112 896 126 C 894 138 900 145 900 155"/>
+  <path class="v3" d="M 869 148 C 887 156 893 170 891 183"/>
+  <path class="v3" d="M 866 68 C 846 74 836 86 838 100"/>
+  <path class="v4" d="M 867 120 C 848 127 840 140 843 153"/>
+  <path class="v2" d="M 836 0 C 832 30 846 52 840 76 C 835 96 848 116 842 140 C 838 162 848 178 843 200 C 840 215 847 226 843 240"/>
+  <path class="v3" d="M 842 48 C 824 54 816 67 818 80"/>
+  <path class="v4" d="M 843 108 C 826 114 820 128 822 142"/>
+  <path class="v4" d="M 814 0 C 811 24 821 42 817 62 C 813 80 823 96 819 118"/>
+
+  <!-- THORNS RIGHT -->
+  <polygon fill="#0d2818" points="867,32 873,27 860,25"/>
+  <polygon fill="#0d2818" points="866,74 873,69 859,67"/>
+  <polygon fill="#0d2818" points="868,122 875,118 861,115"/>
+  <polygon fill="#0d2818" points="869,168 876,163 862,161"/>
+  <polygon fill="#0d2818" points="898,62 903,55 893,53"/>
+  <polygon fill="#0d2818" points="896,118 901,111 891,109"/>
+  <polygon fill="#0d2818" points="839,43 844,37 833,35"/>
+  <polygon fill="#0d2818" points="841,103 847,97 835,95"/>
+
+  <!-- RIGHT LEAVES -->
+  <ellipse class="l1" cx="900" cy="66" rx="12" ry="5" fill="#1b4332" transform="rotate(35 900 66)"/>
+  <ellipse class="l1" cx="897" cy="75" rx="10" ry="4.5" fill="#2d6a4f" transform="rotate(-25 897 75)"/>
+  <ellipse class="l1" cx="901" cy="84" rx="8" ry="3.5" fill="#52b788" transform="rotate(15 901 84)"/>
+  <ellipse class="l2" cx="898" cy="126" rx="13" ry="5.5" fill="#1b4332" transform="rotate(28 898 126)"/>
+  <ellipse class="l2" cx="894" cy="135" rx="10" ry="4" fill="#2d6a4f" transform="rotate(-20 894 135)"/>
+  <ellipse class="l2" cx="901" cy="145" rx="8" ry="3.5" fill="#74c69d" transform="rotate(10 901 145)"/>
+  <ellipse class="l3" cx="891" cy="183" rx="10" ry="4.5" fill="#2d6a4f" transform="rotate(22 891 183)"/>
+  <ellipse class="l3" cx="888" cy="192" rx="8" ry="3.5" fill="#52b788" transform="rotate(-18 888 192)"/>
+  <ellipse class="l2" cx="838" cy="98" rx="11" ry="5" fill="#1b4332" transform="rotate(-15 838 98)"/>
+  <ellipse class="l2" cx="843" cy="106" rx="8" ry="3.5" fill="#95d5b2" transform="rotate(20 843 106)"/>
+  <ellipse class="l1" cx="818" cy="78" rx="10" ry="4" fill="#2d6a4f" transform="rotate(-12 818 78)"/>
+  <ellipse class="l2" cx="822" cy="140" rx="9" ry="4" fill="#52b788" transform="rotate(18 822 140)"/>
+  <path class="l1" d="M 885 52 Q 900 44 902 32 Q 892 40 880 46 Z" fill="#1b4332"/>
+  <path class="l2" d="M 882 112 Q 898 104 900 90 Q 890 100 878 106 Z" fill="#2d6a4f"/>
+  <path class="l3" d="M 884 162 Q 898 154 900 140 Q 890 150 880 156 Z" fill="#40916c"/>
+
+  <!-- ===== TOP VINES ===== -->
+  <path class="v2" d="M 64 0 C 165 20 228 9 288 15 C 338 20 388 7 435 11"/>
+  <path class="v3" d="M 32 0 C 135 24 200 13 260 19 C 310 23 360 10 405 13"/>
+  <path class="v4" d="M 86 0 C 178 17 240 7 300 12 C 345 15 390 5 425 9"/>
+  <path class="v2" d="M 836 0 C 735 20 672 9 612 15 C 562 20 512 7 465 11"/>
+  <path class="v3" d="M 868 0 C 765 24 700 13 640 19 C 590 23 540 10 495 13"/>
+  <path class="v4" d="M 814 0 C 722 17 660 7 600 12 C 555 15 510 5 475 9"/>
+
+  <!-- TOP THORNS -->
+  <polygon fill="#0d2818" points="165,17 163,10 170,12"/>
+  <polygon fill="#0d2818" points="288,13 286,6 293,8"/>
+  <polygon fill="#0d2818" points="388,9 386,2 393,4"/>
+  <polygon fill="#0d2818" points="735,17 737,10 730,12"/>
+  <polygon fill="#0d2818" points="612,13 614,6 607,8"/>
+  <polygon fill="#0d2818" points="512,9 514,2 507,4"/>
+
+  <!-- TOP LEAVES -->
+  <ellipse class="l1" cx="165" cy="15" rx="10" ry="4.5" fill="#1b4332" transform="rotate(-12 165 15)"/>
+  <ellipse class="l1" cx="228" cy="11" rx="8" ry="3.5" fill="#2d6a4f" transform="rotate(8 228 11)"/>
+  <ellipse class="l2" cx="288" cy="13" rx="9" ry="4" fill="#52b788" transform="rotate(-6 288 13)"/>
+  <ellipse class="l2" cx="350" cy="9" rx="8" ry="3.5" fill="#74c69d" transform="rotate(10 350 9)"/>
+  <ellipse class="l3" cx="405" cy="11" rx="7" ry="3" fill="#95d5b2" transform="rotate(-8 405 11)"/>
+  <ellipse class="l1" cx="735" cy="15" rx="10" ry="4.5" fill="#1b4332" transform="rotate(12 735 15)"/>
+  <ellipse class="l1" cx="672" cy="11" rx="8" ry="3.5" fill="#2d6a4f" transform="rotate(-8 672 11)"/>
+  <ellipse class="l2" cx="612" cy="13" rx="9" ry="4" fill="#52b788" transform="rotate(6 612 13)"/>
+  <ellipse class="l2" cx="550" cy="9" rx="8" ry="3.5" fill="#74c69d" transform="rotate(-10 550 9)"/>
+  <ellipse class="l3" cx="495" cy="11" rx="7" ry="3" fill="#95d5b2" transform="rotate(8 495 11)"/>
+  <path class="l2" d="M 200 0 Q 210 12 205 22 Q 195 12 195 0 Z" fill="#2d6a4f"/>
+  <path class="l2" d="M 325 0 Q 335 13 330 23 Q 320 13 320 0 Z" fill="#1b4332"/>
+  <path class="l2" d="M 700 0 Q 690 12 695 22 Q 705 12 705 0 Z" fill="#2d6a4f"/>
+  <path class="l2" d="M 575 0 Q 565 13 570 23 Q 580 13 580 0 Z" fill="#1b4332"/>
+
+  <!-- ===== FLOWERS ===== -->
+  <!-- Orange flower left -->
+  <g class="petal l2" transform="translate(5,92)">
+    <circle cx="0" cy="-6" r="5" fill="#f4a261" opacity="0.9"/>
+    <circle cx="5" cy="-3" r="5" fill="#f4a261" opacity="0.9"/>
+    <circle cx="4" cy="3" r="5" fill="#f4a261" opacity="0.9"/>
+    <circle cx="-4" cy="3" r="5" fill="#f4a261" opacity="0.9"/>
+    <circle cx="-5" cy="-3" r="5" fill="#f4a261" opacity="0.9"/>
+    <circle cx="0" cy="0" r="4" fill="#d4a017"/>
+    <circle cx="0" cy="0" r="2" fill="#fff8"/>
+  </g>
+  <!-- White flower left -->
+  <g class="petal l3" transform="translate(7,155)">
+    <circle cx="0" cy="-5" r="4" fill="#e9f5db" opacity="0.95"/>
+    <circle cx="4" cy="-2" r="4" fill="#e9f5db" opacity="0.95"/>
+    <circle cx="3" cy="4" r="4" fill="#e9f5db" opacity="0.95"/>
+    <circle cx="-3" cy="4" r="4" fill="#e9f5db" opacity="0.95"/>
+    <circle cx="-4" cy="-2" r="4" fill="#e9f5db" opacity="0.95"/>
+    <circle cx="0" cy="0" r="3.5" fill="#95d5b2"/>
+    <circle cx="0" cy="0" r="1.5" fill="#fff"/>
+  </g>
+  <!-- Purple flower left -->
+  <g class="petal l2" transform="translate(63,100)">
+    <circle cx="0" cy="-5" r="4" fill="#c77dff" opacity="0.9"/>
+    <circle cx="4" cy="-2" r="4" fill="#c77dff" opacity="0.9"/>
+    <circle cx="3" cy="3" r="4" fill="#c77dff" opacity="0.9"/>
+    <circle cx="-3" cy="3" r="4" fill="#c77dff" opacity="0.9"/>
+    <circle cx="-4" cy="-2" r="4" fill="#c77dff" opacity="0.9"/>
+    <circle cx="0" cy="0" r="3.5" fill="#f72585"/>
+    <circle cx="0" cy="0" r="1.5" fill="#fff"/>
+  </g>
+  <!-- Orange flower right -->
+  <g class="petal l2" transform="translate(895,92)">
+    <circle cx="0" cy="-6" r="5" fill="#f4a261" opacity="0.9"/>
+    <circle cx="5" cy="-3" r="5" fill="#f4a261" opacity="0.9"/>
+    <circle cx="4" cy="3" r="5" fill="#f4a261" opacity="0.9"/>
+    <circle cx="-4" cy="3" r="5" fill="#f4a261" opacity="0.9"/>
+    <circle cx="-5" cy="-3" r="5" fill="#f4a261" opacity="0.9"/>
+    <circle cx="0" cy="0" r="4" fill="#d4a017"/>
+    <circle cx="0" cy="0" r="2" fill="#fff8"/>
+  </g>
+  <!-- White flower right -->
+  <g class="petal l3" transform="translate(893,155)">
+    <circle cx="0" cy="-5" r="4" fill="#e9f5db" opacity="0.95"/>
+    <circle cx="4" cy="-2" r="4" fill="#e9f5db" opacity="0.95"/>
+    <circle cx="3" cy="4" r="4" fill="#e9f5db" opacity="0.95"/>
+    <circle cx="-3" cy="4" r="4" fill="#e9f5db" opacity="0.95"/>
+    <circle cx="-4" cy="-2" r="4" fill="#e9f5db" opacity="0.95"/>
+    <circle cx="0" cy="0" r="3.5" fill="#95d5b2"/>
+    <circle cx="0" cy="0" r="1.5" fill="#fff"/>
+  </g>
+  <!-- Purple flower right -->
+  <g class="petal l2" transform="translate(837,100)">
+    <circle cx="0" cy="-5" r="4" fill="#c77dff" opacity="0.9"/>
+    <circle cx="4" cy="-2" r="4" fill="#c77dff" opacity="0.9"/>
+    <circle cx="3" cy="3" r="4" fill="#c77dff" opacity="0.9"/>
+    <circle cx="-3" cy="3" r="4" fill="#c77dff" opacity="0.9"/>
+    <circle cx="-4" cy="-2" r="4" fill="#c77dff" opacity="0.9"/>
+    <circle cx="0" cy="0" r="3.5" fill="#f72585"/>
+    <circle cx="0" cy="0" r="1.5" fill="#fff"/>
+  </g>
+  <!-- Top red flowers -->
+  <g class="petal l2" transform="translate(202,10)">
+    <circle cx="0" cy="-4" r="3.5" fill="#e63946"/>
+    <circle cx="3" cy="-1" r="3.5" fill="#e63946"/>
+    <circle cx="2" cy="3" r="3.5" fill="#e63946"/>
+    <circle cx="-2" cy="3" r="3.5" fill="#e63946"/>
+    <circle cx="-3" cy="-1" r="3.5" fill="#e63946"/>
+    <circle cx="0" cy="0" r="3" fill="#ffb703"/>
+  </g>
+  <g class="petal l3" transform="translate(698,10)">
+    <circle cx="0" cy="-4" r="3.5" fill="#e63946"/>
+    <circle cx="3" cy="-1" r="3.5" fill="#e63946"/>
+    <circle cx="2" cy="3" r="3.5" fill="#e63946"/>
+    <circle cx="-2" cy="3" r="3.5" fill="#e63946"/>
+    <circle cx="-3" cy="-1" r="3.5" fill="#e63946"/>
+    <circle cx="0" cy="0" r="3" fill="#ffb703"/>
+  </g>
+
+  <!-- ===== BUTTERFLIES ===== -->
+  <g class="butterfly-g l2" transform="translate(100,32)">
+    <g class="bwing"><ellipse cx="-9" cy="-5" rx="10" ry="7" fill="#c77dff" opacity="0.85" transform="rotate(-20 -9 -5)"/><ellipse cx="-7" cy="4" rx="7" ry="4.5" fill="#9d4edd" opacity="0.8" transform="rotate(15 -7 4)"/></g>
+    <g class="bwing"><ellipse cx="9" cy="-5" rx="10" ry="7" fill="#c77dff" opacity="0.85" transform="rotate(20 9 -5)"/><ellipse cx="7" cy="4" rx="7" ry="4.5" fill="#9d4edd" opacity="0.8" transform="rotate(-15 7 4)"/></g>
+    <ellipse cx="0" cy="0" rx="1.5" ry="6" fill="#240046"/>
+    <line x1="0" y1="-6" x2="-5" y2="-12" stroke="#240046" stroke-width="0.8"/>
+    <line x1="0" y1="-6" x2="5" y2="-12" stroke="#240046" stroke-width="0.8"/>
+    <circle cx="-5" cy="-12" r="1.5" fill="#f72585"/>
+    <circle cx="5" cy="-12" r="1.5" fill="#f72585"/>
+  </g>
+  <g class="butterfly-g l2" transform="translate(800,32)">
+    <g class="bwing"><ellipse cx="-9" cy="-5" rx="10" ry="7" fill="#f4a261" opacity="0.85" transform="rotate(-20 -9 -5)"/><ellipse cx="-7" cy="4" rx="7" ry="4.5" fill="#e76f51" opacity="0.8" transform="rotate(15 -7 4)"/></g>
+    <g class="bwing"><ellipse cx="9" cy="-5" rx="10" ry="7" fill="#f4a261" opacity="0.85" transform="rotate(20 9 -5)"/><ellipse cx="7" cy="4" rx="7" ry="4.5" fill="#e76f51" opacity="0.8" transform="rotate(-15 7 4)"/></g>
+    <ellipse cx="0" cy="0" rx="1.5" ry="6" fill="#6d2400"/>
+    <line x1="0" y1="-6" x2="-5" y2="-12" stroke="#6d2400" stroke-width="0.8"/>
+    <line x1="0" y1="-6" x2="5" y2="-12" stroke="#6d2400" stroke-width="0.8"/>
+    <circle cx="-5" cy="-12" r="1.5" fill="#ffb703"/>
+    <circle cx="5" cy="-12" r="1.5" fill="#ffb703"/>
+  </g>
+
+  <!-- ===== LADYBUGS ===== -->
+  <g class="lady-g l3" transform="translate(30,58)">
+    <ellipse cx="0" cy="0" rx="6" ry="5" fill="#e63946"/>
+    <ellipse cx="0" cy="-1.5" rx="3" ry="2.5" fill="#0a0a0a"/>
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="#0a0a0a" stroke-width="0.9"/>
+    <circle cx="-2.5" cy="1" r="1.5" fill="#0a0a0a"/>
+    <circle cx="2.5" cy="1" r="1.5" fill="#0a0a0a"/>
+    <circle cx="-2" cy="3.5" r="1" fill="#0a0a0a"/>
+    <circle cx="2" cy="3.5" r="1" fill="#0a0a0a"/>
+    <line x1="-1" y1="-4" x2="-4" y2="-8" stroke="#0a0a0a" stroke-width="0.8"/>
+    <line x1="1" y1="-4" x2="4" y2="-8" stroke="#0a0a0a" stroke-width="0.8"/>
+    <circle cx="-4" cy="-8" r="1" fill="#0a0a0a"/>
+    <circle cx="4" cy="-8" r="1" fill="#0a0a0a"/>
+  </g>
+  <g class="lady-g l3" transform="translate(870,58)">
+    <ellipse cx="0" cy="0" rx="6" ry="5" fill="#e63946"/>
+    <ellipse cx="0" cy="-1.5" rx="3" ry="2.5" fill="#0a0a0a"/>
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="#0a0a0a" stroke-width="0.9"/>
+    <circle cx="-2.5" cy="1" r="1.5" fill="#0a0a0a"/>
+    <circle cx="2.5" cy="1" r="1.5" fill="#0a0a0a"/>
+    <circle cx="-2" cy="3.5" r="1" fill="#0a0a0a"/>
+    <circle cx="2" cy="3.5" r="1" fill="#0a0a0a"/>
+    <line x1="-1" y1="-4" x2="-4" y2="-8" stroke="#0a0a0a" stroke-width="0.8"/>
+    <line x1="1" y1="-4" x2="4" y2="-8" stroke="#0a0a0a" stroke-width="0.8"/>
+  </g>
+
+  <!-- ===== BIRDS ===== -->
+  <g class="bird-g l3" transform="translate(118,20)">
+    <ellipse cx="0" cy="0" rx="7" ry="5" fill="#74c69d"/>
+    <circle cx="7" cy="-2" r="4" fill="#52b788"/>
+    <polygon points="11,-2 15,-1 11,0" fill="#ffb703"/>
+    <circle cx="8" cy="-3" r="1.2" fill="#0a0a0a"/>
+    <circle cx="8.4" cy="-3.3" r="0.4" fill="#fff"/>
+    <ellipse cx="-1" cy="-1" rx="6" ry="3" fill="#2d6a4f" transform="rotate(-15 -1 -1)"/>
+    <path d="M -6 0 Q -12 -3 -11 2 Q -12 6 -6 3 Z" fill="#1b4332"/>
+    <line x1="1" y1="5" x2="0" y2="9" stroke="#ffb703" stroke-width="1"/>
+    <line x1="3" y1="5" x2="2" y2="9" stroke="#ffb703" stroke-width="1"/>
+  </g>
+  <g class="bird-g l3" transform="translate(782,20) scale(-1,1)">
+    <ellipse cx="0" cy="0" rx="7" ry="5" fill="#74c69d"/>
+    <circle cx="7" cy="-2" r="4" fill="#52b788"/>
+    <polygon points="11,-2 15,-1 11,0" fill="#ffb703"/>
+    <circle cx="8" cy="-3" r="1.2" fill="#0a0a0a"/>
+    <circle cx="8.4" cy="-3.3" r="0.4" fill="#fff"/>
+    <ellipse cx="-1" cy="-1" rx="6" ry="3" fill="#2d6a4f" transform="rotate(-15 -1 -1)"/>
+    <path d="M -6 0 Q -12 -3 -11 2 Q -12 6 -6 3 Z" fill="#1b4332"/>
+    <line x1="1" y1="5" x2="0" y2="9" stroke="#ffb703" stroke-width="1"/>
+    <line x1="3" y1="5" x2="2" y2="9" stroke="#ffb703" stroke-width="1"/>
+  </g>
+
+  <!-- ===== BIG VISIBLE SNAIL (bottom left) ===== -->
+  <g class="snail-g l3" transform="translate(18, 210)">
+    <!-- Shell - big and colorful spiral -->
+    <circle cx="0" cy="0" r="16" fill="#d4a017"/>
+    <circle cx="0" cy="0" r="13" fill="#b7791f"/>
+    <circle cx="0" cy="0" r="9" fill="#d4a017"/>
+    <circle cx="0" cy="0" r="6" fill="#a06020"/>
+    <circle cx="0" cy="0" r="3" fill="#d4a017"/>
+    <!-- Shell highlight -->
+    <circle cx="-4" cy="-5" r="3" fill="#f4c430" opacity="0.5"/>
+    <!-- Body -->
+    <ellipse cx="14" cy="10" rx="16" ry="7" fill="#8B7355"/>
+    <ellipse cx="14" cy="10" rx="14" ry="5" fill="#a0896a"/>
+    <!-- Head -->
+    <circle cx="28" cy="6" r="7" fill="#8B7355"/>
+    <circle cx="28" cy="6" r="5.5" fill="#a0896a"/>
+    <!-- Eyes on long stalks -->
+    <line x1="26" y1="2" x2="23" y2="-8" stroke="#6b5a3e" stroke-width="1.5"/>
+    <line x1="30" y1="2" x2="33" y2="-8" stroke="#6b5a3e" stroke-width="1.5"/>
+    <circle cx="23" cy="-8" r="3" fill="#1a1a1a"/>
+    <circle cx="33" cy="-8" r="3" fill="#1a1a1a"/>
+    <!-- Eye shine -->
+    <circle cx="22" cy="-9" r="1.2" fill="#fff"/>
+    <circle cx="32" cy="-9" r="1.2" fill="#fff"/>
+    <!-- Smile -->
+    <path d="M 25 9 Q 28 12 31 9" stroke="#6b5a3e" stroke-width="1" fill="none"/>
+    <!-- Foot/trail -->
+    <ellipse cx="5" cy="14" rx="10" ry="3" fill="#7a6545" opacity="0.6"/>
+  </g>
+
+  <!-- ===== SQUIRREL (right bottom, sitting on vine) ===== -->
+  <g class="l3" transform="translate(840, 175)">
+    <!-- Big fluffy tail -->
+    <g class="squirrel-tail" transform="translate(0,0)">
+      <ellipse cx="-8" cy="-15" rx="12" ry="20" fill="#8B4513" transform="rotate(-20 -8 -15)"/>
+      <ellipse cx="-8" cy="-15" rx="9" ry="16" fill="#cd853f" transform="rotate(-20 -8 -15)"/>
+      <ellipse cx="-8" cy="-15" rx="6" ry="11" fill="#deb887" transform="rotate(-20 -8 -15)"/>
+    </g>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="10" ry="13" fill="#8B4513"/>
+    <ellipse cx="0" cy="0" rx="8" ry="11" fill="#cd853f"/>
+    <!-- Belly -->
+    <ellipse cx="1" cy="3" rx="5" ry="7" fill="#f5deb3"/>
+    <!-- Head -->
+    <circle cx="2" cy="-16" r="11" fill="#8B4513"/>
+    <circle cx="2" cy="-16" r="9" fill="#cd853f"/>
+    <!-- Face white patch -->
+    <ellipse cx="3" cy="-14" rx="6" ry="5" fill="#f5deb3"/>
+    <!-- Big round eyes -->
+    <circle cx="-1" cy="-18" r="4" fill="#1a1a1a"/>
+    <circle cx="6" cy="-18" r="4" fill="#1a1a1a"/>
+    <circle cx="-0.5" cy="-19" r="1.5" fill="#fff"/>
+    <circle cx="6.5" cy="-19" r="1.5" fill="#fff"/>
+    <!-- Nose -->
+    <ellipse cx="2" cy="-13" rx="2" ry="1.5" fill="#8B4513"/>
+    <circle cx="2" cy="-13" r="1" fill="#ff9999"/>
+    <!-- Mouth -->
+    <path d="M 0 -11 Q 2 -9 4 -11" stroke="#8B4513" stroke-width="0.8" fill="none"/>
+    <!-- Ears -->
+    <ellipse cx="-6" cy="-25" rx="4" ry="6" fill="#8B4513" transform="rotate(-15 -6 -25)"/>
+    <ellipse cx="-6" cy="-25" rx="2.5" ry="4" fill="#cd853f" transform="rotate(-15 -6 -25)"/>
+    <ellipse cx="10" cy="-25" rx="4" ry="6" fill="#8B4513" transform="rotate(15 10 -25)"/>
+    <ellipse cx="10" cy="-25" rx="2.5" ry="4" fill="#cd853f" transform="rotate(15 10 -25)"/>
+    <!-- Arms holding acorn -->
+    <path d="M -8 -2 Q -14 4 -12 8" stroke="#8B4513" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M 8 -2 Q 14 4 12 8" stroke="#8B4513" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- Acorn -->
+    <ellipse cx="0" cy="10" rx="5" ry="4" fill="#cd853f"/>
+    <ellipse cx="0" cy="7" rx="5.5" ry="3" fill="#8B4513"/>
+    <line x1="0" y1="4" x2="0" y2="2" stroke="#4a2f0a" stroke-width="1.2"/>
+    <!-- Feet -->
+    <ellipse cx="-5" cy="13" rx="4" ry="2.5" fill="#8B4513"/>
+    <ellipse cx="5" cy="13" rx="4" ry="2.5" fill="#8B4513"/>
+  </g>
+
+  <!-- ===== LEMUR (big-eyed, right side vine, hanging) ===== -->
+  <g class="l2" transform="translate(858, 120)">
+    <!-- Striped tail hanging down -->
+    <path d="M 0 20 Q -10 35 -5 50 Q 5 60 0 75" stroke="#333" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M 0 20 Q -10 35 -5 50 Q 5 60 0 75" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="6,6"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="10" rx="9" ry="11" fill="#888"/>
+    <ellipse cx="0" cy="10" rx="7" ry="9" fill="#aaa"/>
+    <!-- White belly -->
+    <ellipse cx="0" cy="12" rx="4.5" ry="6" fill="#f0f0f0"/>
+    <!-- Head - round -->
+    <circle cx="0" cy="-4" r="12" fill="#888"/>
+    <circle cx="0" cy="-4" r="10" fill="#aaa"/>
+    <!-- White face patch -->
+    <ellipse cx="0" cy="-2" rx="7" ry="6" fill="#f0f0f0"/>
+    <!-- HUGE eyes (Mort-style) -->
+    <circle cx="-4" cy="-5" r="6" fill="#fff"/>
+    <circle cx="4" cy="-5" r="6" fill="#fff"/>
+    <circle cx="-4" cy="-5" r="4" fill="#3a7d00"/>
+    <circle cx="4" cy="-5" r="4" fill="#3a7d00"/>
+    <circle cx="-4" cy="-5" r="2.5" fill="#1a1a1a"/>
+    <circle cx="4" cy="-5" r="2.5" fill="#1a1a1a"/>
+    <!-- Eye shine -->
+    <circle cx="-5.5" cy="-6.5" r="1.2" fill="#fff"/>
+    <circle cx="2.5" cy="-6.5" r="1.2" fill="#fff"/>
+    <circle cx="-3" cy="-4" r="0.6" fill="#fff"/>
+    <circle cx="5" cy="-4" r="0.6" fill="#fff"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="1" rx="2" ry="1.5" fill="#555"/>
+    <circle cx="0" cy="1" r="1" fill="#666"/>
+    <!-- Big ears -->
+    <ellipse cx="-10" cy="-12" rx="5" ry="7" fill="#777" transform="rotate(-20 -10 -12)"/>
+    <ellipse cx="-10" cy="-12" rx="3" ry="4.5" fill="#ffccaa" transform="rotate(-20 -10 -12)"/>
+    <ellipse cx="10" cy="-12" rx="5" ry="7" fill="#777" transform="rotate(20 10 -12)"/>
+    <ellipse cx="10" cy="-12" rx="3" ry="4.5" fill="#ffccaa" transform="rotate(20 10 -12)"/>
+    <!-- Tiny hands gripping vine -->
+    <circle cx="-9" cy="0" r="3.5" fill="#777"/>
+    <circle cx="9" cy="0" r="3.5" fill="#777"/>
+    <!-- Smile -->
+    <path d="M -3 3 Q 0 6 3 3" stroke="#555" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- ===== CENTER TEXT ===== -->
+  <text x="450" y="96" font-family="'Courier New', monospace" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="2">Shivam Godhwani</text>
+  <text x="450" y="126" font-family="'Courier New', monospace" font-size="12" fill="#52b788" text-anchor="middle" letter-spacing="3">BUILDER · RESEARCHER · PROBLEM SOLVER</text>
+  <text x="450" y="150" font-family="'Courier New', monospace" font-size="10" fill="#74c69d" text-anchor="middle">IIM Bangalore · HPAIR Selectee · AI Tools</text>
+
+  <circle class="glow" cx="310" cy="120" r="2" fill="#52b788"/>
+  <circle class="glow" cx="590" cy="120" r="2" fill="#52b788"/>
+</svg>
